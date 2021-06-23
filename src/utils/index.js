@@ -1,3 +1,4 @@
+// 碰撞检测
 export function hitObjectTest(objA, objB) {
   return (
     objA.x + objA.width >= objB.x &&

@@ -8,7 +8,6 @@
 <script>
 import planeImg from "../assets/images/plane.png";
 import { ref, reactive, onMounted, onUnmounted } from "vue";
-// import { reactive } from "vue";
 import config from "../config";
 let _emit;
 export default {

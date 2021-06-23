@@ -19,6 +19,7 @@ export default {
       x: 0,
       y: 0
     });
+    // 地图移动
     const mapMove = () => {
       preMapInfo.y += config.map.speed;
       nextMapInfo.y += config.map.speed;

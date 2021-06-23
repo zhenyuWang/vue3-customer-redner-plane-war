@@ -45,6 +45,7 @@ export function useEnemy(onAttack) {
   const addEnemy = () => {
     enemys.push(createEnemy());
   };
+  // 敌机移动
   const move = () => {
     enemys.forEach((enemy, index) => {
       enemy.y += config.enemy.speed;
@@ -76,7 +77,9 @@ export function useEnemy(onAttack) {
         y: enemy.y + 90
       });
   };
+  // 添加敌机interval
   const addEnemyTimer = ref();
+  // 敌机攻击interval
   const enemyAttackTimer = ref();
   onMounted(() => {
     game.ticker.add(move);
